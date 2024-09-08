@@ -1,0 +1,271 @@
+=== Run information ===
+
+Scheme:
+	RandomTree -K 0 -M 1.0 -V 0.001 -S 1
+
+Lagged and derived variable options:
+	-F Denuncias -L 1 -M 1 -G Periodo -month -quarter
+
+Relation:     MP Datos Proyecto Final (serie)
+Instances:    60
+Attributes:   2
+              Periodo
+              Denuncias
+
+Transformed training data:
+
+              Periodo
+              Denuncias
+              Lag_Denuncias-1
+              Periodo^2
+              Periodo^3
+              Periodo*Lag_Denuncias-1
+
+Denuncias:
+
+RandomTree
+==========
+
+Lag_Denuncias-1 < 4890
+|   Periodo^2 < 306.5
+|   |   Lag_Denuncias-1 < 3350 : 3439.54 (1.04/176763.71)
+|   |   Lag_Denuncias-1 >= 3350 : 2098.37 (1.04/485123.94)
+|   Periodo^2 >= 306.5
+|   |   Lag_Denuncias-1 < 4397.5
+|   |   |   Periodo < 18.5 : 4316 (1/0)
+|   |   |   Periodo >= 18.5 : 4479 (1/0)
+|   |   Lag_Denuncias-1 >= 4397.5 : 5035 (1/0)
+Lag_Denuncias-1 >= 4890
+|   Periodo < 26.5
+|   |   Periodo*Lag_Denuncias-1 < 96062.5
+|   |   |   Periodo^2 < 20.5
+|   |   |   |   Periodo < 3.5 : 5473.14 (2.59/125.3)
+|   |   |   |   Periodo >= 3.5 : 5815 (1/0)
+|   |   |   Periodo^2 >= 20.5
+|   |   |   |   Periodo^3 < 1962.5
+|   |   |   |   |   Periodo < 10.5
+|   |   |   |   |   |   Periodo < 6.5 : 6066.5 (2/506.25)
+|   |   |   |   |   |   Periodo >= 6.5
+|   |   |   |   |   |   |   Lag_Denuncias-1 < 6131.5
+|   |   |   |   |   |   |   |   Lag_Denuncias-1 < 5989.5 : 6401 (1/0)
+|   |   |   |   |   |   |   |   Lag_Denuncias-1 >= 5989.5 : 6538 (1/0)
+|   |   |   |   |   |   |   Lag_Denuncias-1 >= 6131.5
+|   |   |   |   |   |   |   |   Lag_Denuncias-1 < 6378.5 : 5935 (1/0)
+|   |   |   |   |   |   |   |   Lag_Denuncias-1 >= 6378.5 : 6219 (1/0)
+|   |   |   |   |   Periodo >= 10.5 : 5644 (2/64)
+|   |   |   |   Periodo^3 >= 1962.5 : 6626 (2/841)
+|   |   Periodo*Lag_Denuncias-1 >= 96062.5
+|   |   |   Periodo*Lag_Denuncias-1 < 102345 : 4777.25 (1.05/22729)
+|   |   |   Periodo*Lag_Denuncias-1 >= 102345
+|   |   |   |   Periodo*Lag_Denuncias-1 < 133719.5
+|   |   |   |   |   Lag_Denuncias-1 < 5371.5
+|   |   |   |   |   |   Periodo*Lag_Denuncias-1 < 113755.5 : 5598.66 (1.05/622.82)
+|   |   |   |   |   |   Periodo*Lag_Denuncias-1 >= 113755.5
+|   |   |   |   |   |   |   Lag_Denuncias-1 < 5106.5 : 5358.65 (1.05/696.35)
+|   |   |   |   |   |   |   Lag_Denuncias-1 >= 5106.5 : 5584.32 (1.05/479.09)
+|   |   |   |   |   Lag_Denuncias-1 >= 5371.5 : 5917.09 (1.05/8663)
+|   |   |   |   Periodo*Lag_Denuncias-1 >= 133719.5
+|   |   |   |   |   Periodo^2 < 265 : 5482 (0.09/-0)
+|   |   |   |   |   Periodo^2 >= 265
+|   |   |   |   |   |   Periodo < 24 : 5074 (1/0)
+|   |   |   |   |   |   Periodo >= 24 : 5139 (1/0)
+|   Periodo >= 26.5
+|   |   Periodo*Lag_Denuncias-1 < 341142.5
+|   |   |   Periodo^2 < 1482.5
+|   |   |   |   Periodo*Lag_Denuncias-1 < 238724
+|   |   |   |   |   Periodo*Lag_Denuncias-1 < 223033
+|   |   |   |   |   |   Lag_Denuncias-1 < 6353.5
+|   |   |   |   |   |   |   Lag_Denuncias-1 < 6218
+|   |   |   |   |   |   |   |   Periodo^2 < 1012.5 : 6980 (1/0)
+|   |   |   |   |   |   |   |   Periodo^2 >= 1012.5 : 6876 (1/0)
+|   |   |   |   |   |   |   Lag_Denuncias-1 >= 6218 : 6747 (1/0)
+|   |   |   |   |   |   Lag_Denuncias-1 >= 6353.5
+|   |   |   |   |   |   |   Periodo*Lag_Denuncias-1 < 202187.5 : 6353.5 (2/182.25)
+|   |   |   |   |   |   |   Periodo*Lag_Denuncias-1 >= 202187.5
+|   |   |   |   |   |   |   |   Periodo < 32.5 : 6545.5 (2/930.25)
+|   |   |   |   |   |   |   |   Periodo >= 32.5 : 6665 (1/0)
+|   |   |   |   |   Periodo*Lag_Denuncias-1 >= 223033 : 7523 (1/0)
+|   |   |   |   Periodo*Lag_Denuncias-1 >= 238724
+|   |   |   |   |   Lag_Denuncias-1 < 7199.5
+|   |   |   |   |   |   Periodo < 37.5 : 6601 (1/0)
+|   |   |   |   |   |   Periodo >= 37.5 : 6299 (1/0)
+|   |   |   |   |   Lag_Denuncias-1 >= 7199.5 : 6096 (1/0)
+|   |   |   Periodo^2 >= 1482.5
+|   |   |   |   Periodo^2 < 2210
+|   |   |   |   |   Lag_Denuncias-1 < 6813.5
+|   |   |   |   |   |   Lag_Denuncias-1 < 6340 : 7377 (1/0)
+|   |   |   |   |   |   Lag_Denuncias-1 >= 6340
+|   |   |   |   |   |   |   Periodo < 42.5 : 7617 (1/0)
+|   |   |   |   |   |   |   Periodo >= 42.5 : 7553 (1/0)
+|   |   |   |   |   Lag_Denuncias-1 >= 6813.5
+|   |   |   |   |   |   Periodo < 44
+|   |   |   |   |   |   |   Periodo < 42.5
+|   |   |   |   |   |   |   |   Lag_Denuncias-1 < 7497 : 6694 (1/0)
+|   |   |   |   |   |   |   |   Lag_Denuncias-1 >= 7497 : 6933 (1/0)
+|   |   |   |   |   |   |   Periodo >= 42.5 : 6381 (1/0)
+|   |   |   |   |   |   Periodo >= 44 : 7322 (2/961)
+|   |   |   |   Periodo^2 >= 2210
+|   |   |   |   |   Periodo^2 < 3204.5
+|   |   |   |   |   |   Lag_Denuncias-1 < 6193 : 7174 (1/0)
+|   |   |   |   |   |   Lag_Denuncias-1 >= 6193
+|   |   |   |   |   |   |   Periodo < 48.5 : 6727 (1/0)
+|   |   |   |   |   |   |   Periodo >= 48.5
+|   |   |   |   |   |   |   |   Lag_Denuncias-1 < 6508 : 6927 (1/0)
+|   |   |   |   |   |   |   |   Lag_Denuncias-1 >= 6508 : 6848 (1/0)
+|   |   |   |   |   Periodo^2 >= 3204.5 : 6663 (1/0)
+|   |   Periodo*Lag_Denuncias-1 >= 341142.5
+|   |   |   Periodo < 58.5
+|   |   |   |   Periodo < 53
+|   |   |   |   |   Lag_Denuncias-1 < 7011 : 6097 (1/0)
+|   |   |   |   |   Lag_Denuncias-1 >= 7011 : 6319.5 (2/930.25)
+|   |   |   |   Periodo >= 53
+|   |   |   |   |   Periodo < 57.5
+|   |   |   |   |   |   Periodo < 54.5 : 6605 (1/0)
+|   |   |   |   |   |   Periodo >= 54.5
+|   |   |   |   |   |   |   Periodo < 56.5 : 7066 (2/81)
+|   |   |   |   |   |   |   Periodo >= 56.5 : 6812 (1/0)
+|   |   |   |   |   Periodo >= 57.5 : 6478 (1/0)
+|   |   |   Periodo >= 58.5 : 5630 (1/0)
+
+Size of the tree : 101
+
+=== Predictions for training data: Denuncias (1-step ahead) ===
+
+      inst#       actual    predicted        error
+          2         5482    5473.1365      -8.8635
+          3         5459    5473.1365      14.1365
+          4         5815         5815            0
+          5         6089       6066.5        -22.5
+          6         6044       6066.5         22.5
+          7         6538         6538            0
+          8         6219         6219            0
+          9         5935         5935            0
+         10         6401         6401            0
+         11         5652         5644           -8
+         12         5636         5644            8
+         13         6655         6626          -29
+         14         6597         6626           29
+         15         4745    4777.2512      32.2512
+         16         1955     2098.374      143.374
+         17         3353    3439.5447      86.5447
+         18         4316         4316            0
+         19         4479         4479            0
+         20         5035         5035            0
+         21         5604    5598.6613      -5.3387
+         22         5937    5917.0891     -19.9109
+         23         5074         5074            0
+         24         5353    5358.6451       5.6451
+         25         5139         5139            0
+         26         5589    5584.3177      -4.6823
+         27         6980         6980            0
+         28         6340       6353.5         13.5
+         29         6747         6747            0
+         30         6515       6545.5         30.5
+         31         6367       6353.5        -13.5
+         32         6576       6545.5        -30.5
+         33         6665         6665            0
+         34         7523         7523            0
+         35         6096         6096            0
+         36         6876         6876            0
+         37         6601         6601            0
+         38         6299         6299            0
+         39         7377         7377            0
+         40         6694         6694            0
+         41         7617         7617            0
+         42         6933         6933            0
+         43         6381         6381            0
+         44         7553         7553            0
+         45         7291         7322           31
+         46         7353         7322          -31
+         47         6350       6319.5        -30.5
+         48         6727         6727            0
+         49         6848         6848            0
+         50         6097         6097            0
+         51         7174         7174            0
+         52         6289       6319.5         30.5
+         53         6927         6927            0
+         54         6605         6605            0
+         55         7075         7066           -9
+         56         7057         7066            9
+         57         6812         6812            0
+         58         6478         6478            0
+         59         5630         5630            0
+         60         6663         6663            0
+
+=== Future predictions from end of training data ===
+inst#    Denuncias 
+1             5482 
+2             5482 
+3             5459 
+4             5815 
+5             6089 
+6             6044 
+7             6538 
+8             6219 
+9             5935 
+10            6401 
+11            5652 
+12            5636 
+13            6655 
+14            6597 
+15            4745 
+16            1955 
+17            3353 
+18            4316 
+19            4479 
+20            5035 
+21            5604 
+22            5937 
+23            5074 
+24            5353 
+25            5139 
+26            5589 
+27            6980 
+28            6340 
+29            6747 
+30            6515 
+31            6367 
+32            6576 
+33            6665 
+34            7523 
+35            6096 
+36            6876 
+37            6601 
+38            6299 
+39            7377 
+40            6694 
+41            7617 
+42            6933 
+43            6381 
+44            7553 
+45            7291 
+46            7353 
+47            6350 
+48            6727 
+49            6848 
+50            6097 
+51            7174 
+52            6289 
+53            6927 
+54            6605 
+55            7075 
+56            7057 
+57            6812 
+58            6478 
+59            5630 
+60            6663 
+61*           5630 
+62*           5630 
+63*           5630 
+
+=== Evaluation on training data ===
+Target                             1-step-ahead  2-steps-ahead  3-steps-ahead
+=============================================================================
+Denuncias
+  N                                          59             58             57
+  Mean absolute error                   11.3347        21.0066        23.4254
+  Mean absolute percentage error         0.2874         0.4349         0.4732
+  Root mean squared error               25.6559        62.3227        66.2572
+  Mean squared error                   658.2265      3884.1216      4390.0213
+
+Total number of instances: 60

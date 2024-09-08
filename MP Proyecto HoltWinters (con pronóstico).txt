@@ -1,0 +1,208 @@
+=== Run information ===
+
+Scheme:
+	timeseries.HoltWinters -alpha 0.2 -beta 0.2 -gamma 0.2 cycle-length 12
+
+Lagged and derived variable options:
+	-F Denuncias -L 1 -M 36 -G Periodo -month -quarter
+
+Relation:     MP Datos Proyecto Final (serie)
+Instances:    60
+Attributes:   2
+              Periodo
+              Denuncias
+
+Transformed training data:
+
+              Periodo
+              Denuncias
+              Lag_Denuncias-1
+              Lag_Denuncias-2
+              Lag_Denuncias-3
+              Lag_Denuncias-4
+              Lag_Denuncias-5
+              Lag_Denuncias-6
+              Lag_Denuncias-7
+              Lag_Denuncias-8
+              Lag_Denuncias-9
+              Lag_Denuncias-10
+              Lag_Denuncias-11
+              Lag_Denuncias-12
+              Lag_Denuncias-13
+              Lag_Denuncias-14
+              Lag_Denuncias-15
+              Lag_Denuncias-16
+              Lag_Denuncias-17
+              Lag_Denuncias-18
+              Lag_Denuncias-19
+              Lag_Denuncias-20
+              Lag_Denuncias-21
+              Lag_Denuncias-22
+              Lag_Denuncias-23
+              Lag_Denuncias-24
+              Lag_Denuncias-25
+              Lag_Denuncias-26
+              Lag_Denuncias-27
+              Lag_Denuncias-28
+              Lag_Denuncias-29
+              Lag_Denuncias-30
+              Lag_Denuncias-31
+              Lag_Denuncias-32
+              Lag_Denuncias-33
+              Lag_Denuncias-34
+              Lag_Denuncias-35
+              Lag_Denuncias-36
+              Periodo^2
+              Periodo^3
+              Periodo*Lag_Denuncias-1
+              Periodo*Lag_Denuncias-2
+              Periodo*Lag_Denuncias-3
+              Periodo*Lag_Denuncias-4
+              Periodo*Lag_Denuncias-5
+              Periodo*Lag_Denuncias-6
+              Periodo*Lag_Denuncias-7
+              Periodo*Lag_Denuncias-8
+              Periodo*Lag_Denuncias-9
+              Periodo*Lag_Denuncias-10
+              Periodo*Lag_Denuncias-11
+              Periodo*Lag_Denuncias-12
+              Periodo*Lag_Denuncias-13
+              Periodo*Lag_Denuncias-14
+              Periodo*Lag_Denuncias-15
+              Periodo*Lag_Denuncias-16
+              Periodo*Lag_Denuncias-17
+              Periodo*Lag_Denuncias-18
+              Periodo*Lag_Denuncias-19
+              Periodo*Lag_Denuncias-20
+              Periodo*Lag_Denuncias-21
+              Periodo*Lag_Denuncias-22
+              Periodo*Lag_Denuncias-23
+              Periodo*Lag_Denuncias-24
+              Periodo*Lag_Denuncias-25
+              Periodo*Lag_Denuncias-26
+              Periodo*Lag_Denuncias-27
+              Periodo*Lag_Denuncias-28
+              Periodo*Lag_Denuncias-29
+              Periodo*Lag_Denuncias-30
+              Periodo*Lag_Denuncias-31
+              Periodo*Lag_Denuncias-32
+              Periodo*Lag_Denuncias-33
+              Periodo*Lag_Denuncias-34
+              Periodo*Lag_Denuncias-35
+              Periodo*Lag_Denuncias-36
+
+Denuncias:
+Holt-Winters triple exponential smoothing.
+	Value smoothing factor: 0.2
+	Trend smoothing factor: 0.2
+	Seasonal smoothing factor: 0.2
+	Season cycle length: 12
+
+
+
+=== Predictions for training data: Denuncias (1-step ahead) ===
+
+      inst#       actual    predicted        error
+         37         6601    6811.2983     210.2983
+         38         6299     6848.479      549.479
+         39         7377    6947.5516    -429.4484
+         40         6694    7862.3864    1168.3864
+         41         7617   11713.9198    4096.9198
+         42         6933   12077.8668    5144.8668
+         43         6381   12553.8146    6172.8146
+         44         7553    11501.099     3948.099
+         45         7291   10746.7901    3455.7901
+         46         7353   11142.9672    3789.9672
+         47         6350    9099.0705    2749.0705
+         48         6727    8681.4418    1954.4418
+         49         6848    9273.5779    2425.5779
+         50         6097    8548.1498    2451.1498
+         51         7174     6064.613    -1109.387
+         52         6289    2715.9108   -3573.0892
+         53         6927    4193.2922   -2733.7078
+         54         6605    4947.0065   -1657.9935
+         55         7075    4894.9629   -2180.0371
+         56         7057    5567.0941   -1489.9059
+         57         6812    6001.4048    -810.5952
+         58         6478    6207.5536    -270.4464
+         59         5630    5108.6041    -521.3959
+         60         6663    5245.5023   -1417.4977
+
+=== Future predictions from end of training data ===
+inst#    Denuncias 
+1             5482 
+2             5482 
+3             5459 
+4             5815 
+5             6089 
+6             6044 
+7             6538 
+8             6219 
+9             5935 
+10            6401 
+11            5652 
+12            5636 
+13            6655 
+14            6597 
+15            4745 
+16            1955 
+17            3353 
+18            4316 
+19            4479 
+20            5035 
+21            5604 
+22            5937 
+23            5074 
+24            5353 
+25            5139 
+26            5589 
+27            6980 
+28            6340 
+29            6747 
+30            6515 
+31            6367 
+32            6576 
+33            6665 
+34            7523 
+35            6096 
+36            6876 
+37            6601 
+38            6299 
+39            7377 
+40            6694 
+41            7617 
+42            6933 
+43            6381 
+44            7553 
+45            7291 
+46            7353 
+47            6350 
+48            6727 
+49            6848 
+50            6097 
+51            7174 
+52            6289 
+53            6927 
+54            6605 
+55            7075 
+56            7057 
+57            6812 
+58            6478 
+59            5630 
+60            6663 
+61*       5072.615 
+62*      5203.2154 
+63*      6340.3206 
+
+=== Evaluation on training data ===
+Target                             1-step-ahead  2-steps-ahead  3-steps-ahead
+=============================================================================
+Denuncias
+  N                                          24             23             22
+  Mean absolute error                 2262.9319      2490.2443      2695.4433
+  Mean absolute percentage error        33.1033        36.6212        39.6203
+  Root mean squared error             2758.4712      3135.6351      3464.4085
+  Mean squared error                7609163.111    9832207.626   12002126.566
+
+Total number of instances: 60
+
